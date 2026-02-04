@@ -2,6 +2,7 @@
 layout: "base.njk"
 title: "Socials"
 ---
+
 <section id="contact">
     <h2>Contact & Socials</h2>
     <p>Feel free to connect!</p>
