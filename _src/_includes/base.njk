@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - April Kidd</title>
+    <link rel="stylesheet" href="https://latex.now.sh/style.css">
+    <link rel="stylesheet" href="/css/style.css?v={{ env.timestamp }}">
+</head>
+<body>
+    {% include "header.njk" %}
+
+    <main>
+        {{ content | safe }}
+    </main>
+
+    {% include "footer.njk" %}
+
+    {% if script %}
+        <script>
+            {{ script | safe }}
+        </script>
+    {% endif %}
+
+    <script>
+        console.log("Theme script starting...");
+        const themeToggle = document.getElementById('theme-toggle');
+        console.log("Button element:", themeToggle); // Check if the button is found
+        const body = document.body;
+
+        // Check for saved theme in localStorage
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            body.classList.add('light-mode');
+        }
+
+        if (themeToggle) {
+            themeToggle.addEventListener('click', () => {
+                body.classList.toggle('light-mode');
+
+                // Save the current theme preference
+                if (body.classList.contains('light-mode')) {
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    localStorage.removeItem('theme');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
