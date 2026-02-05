@@ -1,6 +1,7 @@
 ---
 layout: "base.njk"
 title: "Blog"
+templateEngine: njk
 ---
 <section id="blog">
     <h2>Blog</h2>
