@@ -2,6 +2,7 @@
 layout: "base.njk"
 title: "About"
 ---
+
 <section id="experience">
     <h2>Experience</h2>
     <div class="job">
@@ -46,9 +47,9 @@ title: "About"
             <a href="https://github.com/april-webm/SIG-Algothon-2025" target="_blank">View on GitHub</a>
         </div>
         <div class="project">
-            <h3>LimitOrderBook</h3>
-            <p>A simple implementation of a limit order book in Python.</p>
-            <a href="https://github.com/april-webm/LimitOrderBook" target="_blank">View on GitHub</a>
+            <h3>Kestrel</h3>
+            <p>A modern Python library for stochastic process modelling, parameter estimation and Monte Carlo simulation. </p>
+            <a href="https://github.com/april-webm/kestrel" target="_blank">View on GitHub</a>
         </div>
         <div class="project">
             <h3>aprils-resume-template</h3>
