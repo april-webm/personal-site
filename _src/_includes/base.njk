@@ -23,12 +23,9 @@
     {% endif %}
 
     <script>
-        console.log("Theme script starting...");
         const themeToggle = document.getElementById('theme-toggle');
-        console.log("Button element:", themeToggle); // Check if the button is found
         const body = document.body;
 
-        // Check for saved theme in localStorage
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme === 'light') {
             body.classList.add('light-mode');
@@ -38,7 +35,6 @@
             themeToggle.addEventListener('click', () => {
                 body.classList.toggle('light-mode');
 
-                // Save the current theme preference
                 if (body.classList.contains('light-mode')) {
                     localStorage.setItem('theme', 'light');
                 } else {
