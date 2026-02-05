@@ -1,7 +1,6 @@
 ---
 layout: "base.njk"
 title: "Blog"
-permalink: "blog.html"
 ---
 <section id="blog">
     <h2>Blog</h2>

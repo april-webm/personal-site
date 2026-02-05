@@ -1,6 +1,7 @@
 ---
 layout: "base.njk"
 title: "Home"
+permalink: "index.html"
 script: |
     // Function to update the monster counter
     function updateMonsterCounter() {
