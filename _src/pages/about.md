@@ -1,69 +1,88 @@
 ---
 layout: "base.njk"
 title: "About"
+jobs:
+  - title: "Software Developer Intern"
+    company: "Queensland Investment Corporation (QIC)"
+    date: "Sep 2025 - Present"
+    items:
+      - "Maintained and validated market/derivatives data pipelines used by integration and analytics teams."
+      - "Fixed a calculation defect in realised bond-volatility bilinear interpolation by refactoring state management."
+      - "Improved reliability by adding CI regression checks and targeted tests to ensure performance stays within tolerance."
+  - title: "Software Engineer"
+    company: "UQ Racing"
+    date: "Feb 2025 - Oct 2025"
+    items:
+      - "Authored C++ and Python code for vehicle computer vision systems, leveraging simulation and real-world test data to optimise path planning, increasing navigational accuracy."
+      - "Refactored the AV cone detection algorithm, splitting C++/Python bases into modular components to reduce complexity by 40%."
+      - "Collaborated with engineering teams to integrate software components ensuring compliance with Formula SAE specs."
+  - title: "Secretary"
+    company: "UQ Computing Society"
+    date: "Oct 2025 - Present"
+    items:
+      - "Previously <em>General Executive Committee</em> (Aug 2025 - Oct 2025). Managed and delegated tasks among Exec Committee."
+      - "Assisted with running community driven and social events."
+projects:
+  - name: "stochastic-density-dynamics"
+    description: "A computational study and 3D visualization of probability density evolution in stochastic processes."
+    url: "https://github.com/april-webm/stochastic-density-dynamics"
+  - name: "SIG-Algothon-2025"
+    description: "Strategy Implementation for the UNSW x SIG Algothon 2025."
+    url: "https://github.com/april-webm/SIG-Algothon-2025"
+  - name: "Kestrel"
+    description: "A modern Python library for stochastic process modelling, parameter estimation and Monte Carlo simulation."
+    url: "https://github.com/april-webm/kestrel"
+  - name: "aprils-resume-template"
+    description: "A parser-friendly resume template created in Typst."
+    url: "https://github.com/april-webm/aprils-resume-template"
 ---
 
 <section id="experience">
-    <h2>Experience</h2>
-    <div class="job">
-        <h3>Software Developer Intern</h3>
-        <p><strong>Queensland Investment Corporation (QIC)</strong> | Sep 2025 - Present</p>
-        <ul>
-            <li>Maintained and validated market/derivatives data pipelines used by integration and analytics teams.</li>
-            <li>Fixed a calculation defect in realised bond-volatility bilinear interpolation by refactoring state management.</li>
-            <li>Improved reliability by adding CI regression checks and targeted tests to ensure performance stays within tolerance.</li>
-        </ul>
-    </div>
-    <div class="job">
-        <h3>Software Engineer</h3>
-        <p><strong>UQ Racing</strong> | Feb 2025 - Oct 2025</p>
-        <ul>
-            <li>Authored C++ and Python code for vehicle computer vision systems, leveraging simulation and real-world test data to optimise path planning, increasing navigational accuracy.</li>
-            <li>Refactored the AV cone detection algorithm, splitting C++/Python bases into modular components to reduce complexity by 40%.</li>
-            <li>Collaborated with engineering teams to integrate software components ensuring compliance with Formula SAE specs.</li>
-        </ul>
-    </div>
-    <div class="job">
-        <h3>Secretary</h3>
-        <p><strong>UQ Computing Society</strong> | Oct 2025 - Present</p>
-        <ul>
-            <li>Previously <em>General Executive Committee</em> (Aug 2025 - Oct 2025). Managed and delegated tasks among Exec Committee.</li>
-            <li>Assisted with running community driven and social events.</li>
-        </ul>
-    </div>
+
+## Experience
+
+{% for job in jobs %}
+<div class="job">
+
+### {{ job.title }}
+
+**{{ job.company }}** | {{ job.date }}
+
+{% for item in job.items %}
+- {{ item | safe }}
+{% endfor %}
+
+</div>
+{% endfor %}
+
 </section>
 
 <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-        <div class="project">
-            <h3>stochastic-density-dynamics</h3>
-            <p>A computational study and 3D visualization of probability density evolution in stochastic processes.</p>
-            <a href="https://github.com/april-webm/stochastic-density-dynamics" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project">
-            <h3>SIG-Algothon-2025</h3>
-            <p>Strategy Implementation for the UNSW x SIG Algothon 2025.</p>
-            <a href="https://github.com/april-webm/SIG-Algothon-2025" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project">
-            <h3>Kestrel</h3>
-            <p>A modern Python library for stochastic process modelling, parameter estimation and Monte Carlo simulation. </p>
-            <a href="https://github.com/april-webm/kestrel" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project">
-            <h3>aprils-resume-template</h3>
-            <p>A parser-friendly resume template created in Typst.</p>
-            <a href="https://github.com/april-webm/aprils-resume-template" target="_blank">View on GitHub</a>
-        </div>
-    </div>
+
+## Projects
+
+<div class="project-grid">
+{% for project in projects %}
+<div class="project">
+
+### {{ project.name }}
+
+{{ project.description }}
+
+<a href="{{ project.url }}" target="_blank">View on GitHub</a>
+
+</div>
+{% endfor %}
+</div>
+
 </section>
 
 <section id="skills">
-    <h2>Technical Skills</h2>
-    <ul>
-        <li><strong>Languages:</strong> Python, Java, C++, R</li>
-        <li><strong>Libraries:</strong> pandas, NumPy, PyTorch, scikit-learn, Matplotlib, statsmodels</li>
-        <li><strong>Tools:</strong> Git, Linux/Unix Command Line, Docker, JUnit, pytest</li>
-    </ul>
+
+## Technical Skills
+
+- **Languages:** Python, Java, C++, R
+- **Libraries:** pandas, NumPy, PyTorch, scikit-learn, Matplotlib, statsmodels
+- **Tools:** Git, Linux/Unix Command Line, Docker, JUnit, pytest
+
 </section>

@@ -33,5 +33,7 @@ module.exports = function(eleventyConfig) {
     },
     // Passthrough files and directories
     passthroughFileCopy: true,
+    // Use Nunjucks for markdown files
+    markdownTemplateEngine: "njk",
   };
 };
