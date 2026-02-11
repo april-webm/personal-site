@@ -27,7 +27,7 @@ body.light-mode {
     --header-color: #000;
 }
 
-section, .monster-counter, header, nav, footer, .project {
+section, header, nav, footer, .project {
     background-color: var(--bg-color);
     border: 2px solid;
     border-color: var(--border-light) var(--border-dark) var(--border-dark) var(--border-light);
@@ -64,16 +64,6 @@ nav {
 nav a {
     margin: 0 1rem;
     font-size: 1.2rem;
-}
-
-.monster-counter h2 {
-    margin: 0;
-    font-size: 1.2rem;
-}
-
-#monster-days {
-    font-weight: bold;
-    color: var(--text-color);
 }
 
 .project-grid {

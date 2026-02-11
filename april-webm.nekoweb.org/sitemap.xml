@@ -12,15 +12,6 @@
     
     
     <url>
-        <loc>https://example.com/</loc>
-        <lastmod>2026-02-04</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    
-    
-    <url>
         <loc>https://example.com/pages/socials/</loc>
         <lastmod>2026-02-04</lastmod>
         <changefreq>monthly</changefreq>
@@ -41,6 +32,15 @@
     <url>
         <loc>https://example.com/pages/about/</loc>
         <lastmod>2026-02-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    
+    
+    <url>
+        <loc>https://example.com/</loc>
+        <lastmod>2026-02-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
