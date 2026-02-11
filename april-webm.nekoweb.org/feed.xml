@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>April Kidd&#39;s Blog</title>
+    <link>https://example.com/</link>
+    <description>Thoughts, project updates, and rants from April herself</description>
+    <atom:link href="https://example.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <language>en</language>
+    <lastBuildDate>Wed, 04 Feb 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>My First Post</title>
+      <link>https://example.com/posts/post1/</link>
+      <description><![CDATA[<p>This is my first post!</p>
+<p>Welcome to my new blog. I'm excited to share my thoughts and projects with you. Most of the content on this blog will be me ranting about things I find cool, or little projects I've made that I want to share with my small corner of the internet. If you're expecting anything coherent, you're in the wrong place.</p>
+]]></description>
+      <pubDate>Wed, 04 Feb 2026 00:00:00 GMT</pubDate>
+      <guid>https://example.com/posts/post1/</guid>
+    </item>
+  </channel>
+</rss>
