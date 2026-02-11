@@ -10,7 +10,12 @@ module.exports = function(eleventyConfig) {
     return format(new Date(dateObj), "yyyy-MM-dd");
   });
 
-  // Absolute URL filter for sitemap
+  // RSS date filter (RFC-822)
+  eleventyConfig.addFilter("rssDate", dateObj => {
+    return new Date(dateObj).toUTCString();
+  });
+
+  // Absolute URL filter for sitemap and feed
   eleventyConfig.addFilter("absoluteUrl", (url, base) => {
     try {
       return new URL(url, base).toString();
