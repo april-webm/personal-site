@@ -27,6 +27,7 @@ module.exports = function(eleventyConfig) {
 
   // Copy the `css` directory and `cursor.png` to the output
   eleventyConfig.addPassthroughCopy("_src/css");
+  eleventyConfig.addPassthroughCopy("_src/img");
   eleventyConfig.addPassthroughCopy("cursor.png");
 
   // Set custom directories for input, output, includes, and data
