@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>April Kidd&#39;s Blog</title>
-    <link>https://example.com/</link>
-    <description>Thoughts, project updates, and rants from April herself</description>
-    <atom:link href="https://example.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <title>April Kidd</title>
+    <link>https://april-webm.nekoweb.org/</link>
+    <description>April Kidd — undergraduate at UQ studying Pure Mathematics and Computer Science. Writes about mathematics, software, and whatever else.</description>
+    <atom:link href="https://april-webm.nekoweb.org/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
     <lastBuildDate>Thu, 07 May 2026 00:00:00 GMT</lastBuildDate>
     <item>
       <title>Inference: a short competition for careful thinkers</title>
-      <link>https://example.com/posts/inference/</link>
+      <link>https://april-webm.nekoweb.org/posts/inference/</link>
       <description><![CDATA[<p>I built a small competition called <a href="https://inferenc.me">Inference</a>. Three problems, three weeks, no code required.</p>
 <p>Each round I put up a question pulled from the kind of reasoning that shows up in trading, gambling, and statistics — parimutuel betting, market microstructure, derivatives pricing. You read the problem, work out an answer, write a short explanation, and submit. Once the round closes I score everyone and post a leaderboard.</p>
 <p>Round 1 is about parimutuel horse racing. If you want a taste: parimutuel markets are interesting because your return depends not just on whether you pick the winner but on what everyone else bet. The house takes a cut, and the rest gets split among winning tickets in proportion to how much was wagered on each outcome. Estimating the true probabilities from the final pool — and figuring out when the market is mispriced — is the actual problem.</p>
@@ -25,16 +25,16 @@
 <p><a href="https://inferenc.me">Have a go.</a></p>
 ]]></description>
       <pubDate>Thu, 07 May 2026 00:00:00 GMT</pubDate>
-      <guid>https://example.com/posts/inference/</guid>
+      <guid>https://april-webm.nekoweb.org/posts/inference/</guid>
     </item>
     <item>
       <title>My First Post</title>
-      <link>https://example.com/posts/post1/</link>
+      <link>https://april-webm.nekoweb.org/posts/post1/</link>
       <description><![CDATA[<p>This is my first post!</p>
 <p>Welcome to my new blog. I'm excited to share my thoughts and projects with you. Most of the content on this blog will be me ranting about things I find cool, or little projects I've made that I want to share with my small corner of the internet. If you're expecting anything coherent, you're in the wrong place.</p>
 ]]></description>
       <pubDate>Wed, 04 Feb 2026 00:00:00 GMT</pubDate>
-      <guid>https://example.com/posts/post1/</guid>
+      <guid>https://april-webm.nekoweb.org/posts/post1/</guid>
     </item>
   </channel>
 </rss>

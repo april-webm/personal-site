@@ -3,7 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }} - April Kidd</title>
+    <title>{% if title == "Home" %}April Kidd{% else %}{{ title }} — April Kidd{% endif %}</title>
+    <meta name="description" content="{{ description or metadata.description }}">
+    <meta name="author" content="April Kidd">
+    <link rel="canonical" href="{{ page.url | absoluteUrl(metadata.url) }}">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="{% if layout == 'post.njk' %}article{% else %}website{% endif %}">
+    <meta property="og:title" content="{% if title == 'Home' %}April Kidd{% else %}{{ title }} — April Kidd{% endif %}">
+    <meta property="og:description" content="{{ description or metadata.description }}">
+    <meta property="og:url" content="{{ page.url | absoluteUrl(metadata.url) }}">
+    <meta property="og:site_name" content="April Kidd">
+    <meta property="og:locale" content="en_AU">
+
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{% if title == 'Home' %}April Kidd{% else %}{{ title }} — April Kidd{% endif %}">
+    <meta name="twitter:description" content="{{ description or metadata.description }}">
+
     <link rel="stylesheet" href="/css/style.css">
     <link rel="alternate" type="application/rss+xml" title="{{ metadata.title }}" href="{{ '/feed.xml' | absoluteUrl(metadata.url) }}">
 </head>

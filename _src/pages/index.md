@@ -2,7 +2,27 @@
 layout: "base.njk"
 title: "Home"
 permalink: "index.html"
+description: "April Kidd — undergraduate at UQ studying Pure Mathematics and Computer Science. Interested in mathematics, software engineering, and birding."
 ---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "April Kidd",
+  "url": "https://april-webm.nekoweb.org/",
+  "description": "Undergraduate at the University of Queensland studying Pure Mathematics and Computer Science.",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "The University of Queensland"
+  },
+  "sameAs": [
+    "https://linkedin.com/in/aprilkidd",
+    "https://github.com/april-webm",
+    "https://inferenc.me"
+  ]
+}
+</script>
 
 <div class="intro">
   <img src="/img/april-owl.jpg" alt="April with a barking owl" class="portrait">

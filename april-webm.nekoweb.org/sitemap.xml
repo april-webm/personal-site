@@ -3,7 +3,7 @@
     
     
     <url>
-        <loc>https://example.com/posts/post1/</loc>
+        <loc>https://april-webm.nekoweb.org/posts/post1/</loc>
         <lastmod>2026-02-04</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -12,7 +12,7 @@
     
     
     <url>
-        <loc>https://example.com/pages/blog/</loc>
+        <loc>https://april-webm.nekoweb.org/pages/blog/</loc>
         <lastmod>2026-05-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -21,7 +21,7 @@
     
     
     <url>
-        <loc>https://example.com/posts/inference/</loc>
+        <loc>https://april-webm.nekoweb.org/posts/inference/</loc>
         <lastmod>2026-05-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -30,7 +30,7 @@
     
     
     <url>
-        <loc>https://example.com/pages/about/</loc>
+        <loc>https://april-webm.nekoweb.org/</loc>
         <lastmod>2026-05-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -39,7 +39,7 @@
     
     
     <url>
-        <loc>https://example.com/</loc>
+        <loc>https://april-webm.nekoweb.org/pages/about/</loc>
         <lastmod>2026-05-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>

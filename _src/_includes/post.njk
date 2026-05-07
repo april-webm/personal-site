@@ -1,6 +1,21 @@
 ---
 layout: "base.njk"
 ---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ title }}",
+  "datePublished": "{{ page.date | htmlDateString }}",
+  "author": {
+    "@type": "Person",
+    "name": "April Kidd",
+    "url": "https://april-webm.nekoweb.org/"
+  },
+  "url": "{{ page.url | absoluteUrl(metadata.url) }}",
+  "description": "{{ description or metadata.description }}"
+}
+</script>
 <article>
     <header>
         <h2>{{ title }}</h2>

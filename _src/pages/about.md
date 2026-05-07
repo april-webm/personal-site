@@ -1,6 +1,7 @@
 ---
 layout: "base.njk"
 title: "About"
+description: "About April Kidd — education, experience, projects, and competition results. UQ undergraduate in Pure Mathematics and Computer Science."
 ---
 
 <a href="/resume.pdf" class="btn" target="_blank">Resume (PDF)</a>
